@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>payment with Payment Request API</title>
+    <style>
+      .log {
+        font-family: monospace;
+      }
+    </style>
+    <script src="https://storage.googleapis.com/prshim/v1/payment-shim.js"></script>
+  </head>
+  <body>
+    <a id="js-buy" href="javascript:void 0">buy</a>
+
+    <ul>
+      <li>
+        <label>requestShipping <input id="js-shipping" type="checkbox"></label>
+      </li>
+      <li>
+        <label>requestPayerEmail <input id="js-payer-email" type="checkbox"></label>
+      </li>
+      <li>
+        <label>requestPayerPhone <input id="js-payer-phone" type="checkbox"></label>
+      </li>
+      <li>
+        <label>requestPayerName <input id="js-payer-name" type="checkbox"></label>
+      </li>
+      <li>
+        <label>forceFail <input id="js-force-fail" type="checkbox"></label>
+      </li>
+    </ul>
+
+    <textarea id="js-log" class="log" cols="60" rows="10" readonly></textarea>
+
+    <script src="index.js"></script>
+  </body>
+</html>
